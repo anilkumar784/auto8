@@ -1,160 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AutoCore Parts - Buy Quality Auto Parts</title>
+  <meta charset="UTF-8" />
+  <title>AutoCore Parts - Quality Auto Parts for Every Vehicle</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f8f9fa;
-      color: #333;
-    }
-
-    header {
-      background-color: #0d6efd;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-    }
-
-    section {
-      padding: 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #0d6efd;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
-      margin-top: 2rem;
-    }
-
-    .category-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .category {
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    .category img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 6px;
-    }
-
-    .price {
-      color: green;
-      font-weight: bold;
-      margin: 0.5rem 0;
-    }
-
-    footer {
-      background: #212529;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-
-    @media (max-width: 600px) {
-      header, section, footer {
-        padding: 1rem;
-      }
-    }
+    body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; color: #333; }
+    header { background: #0d6efd; color: white; padding: 2rem; text-align: center; }
+    nav { background: #e9ecef; padding: 1rem; text-align: center; }
+    nav a { margin: 0 15px; color: #0d6efd; text-decoration: none; font-weight: bold; }
+    main { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+    h2, h3 { color: #0d6efd; }
+    .products { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; }
+    .product-card { background: white; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 48%; padding: 1rem; }
+    .product-card img { max-width: 100%; border-radius: 5px; }
+    .product-card h4 { margin: 0.5rem 0; }
+    .price { color: #198754; font-weight: bold; font-size: 1.2rem; }
+    footer { background: #212529; color: white; text-align: center; padding: 2rem; margin-top: 3rem; }
+    footer a { color: #adb5bd; margin: 0 10px; text-decoration: none; }
+    section { margin-bottom: 2rem; }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>AutoCore Parts</h1>
-    <p>Your Trusted Source for Quality Auto Parts</p>
-  </header>
+<header>
+  <h1>AutoCore Parts</h1>
+  <p>Your trusted source for quality auto parts and accessories</p>
+</header>
 
+<nav>
+  <a href="index.html">Home</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="cookies.html">Cookies</a>
+  <a href="terms.html">Terms</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
   <section>
     <h2>Welcome to AutoCore Parts</h2>
-    <p>We offer premium-quality OEM and aftermarket parts at competitive prices. Whether you're upgrading, repairing, or maintaining your vehicle, we've got the right part for you. Our inventory spans thousands of trusted brands and fits almost every make and model.</p>
+    <p>
+      At AutoCore Parts, we specialize in delivering top-quality automotive components designed to keep your vehicle running smoothly and safely. Whether you're a professional mechanic or a DIY enthusiast, our extensive inventory covers everything from essential engine parts to stylish accessories.
+    </p>
+    <p>
+      We understand how important reliable car parts are. That's why we partner only with trusted manufacturers and suppliers who meet the highest industry standards. Our mission is to provide you with durable, affordable parts that you can count on.
+    </p>
   </section>
 
   <section>
-    <h2>Popular Categories & Featured Products</h2>
-    <div class="category-list">
-      <div class="category">
-        <img src="https://via.placeholder.com/300x150?text=Brake+Pads" alt="Brake Pads">
-        <h3>Brake Pads - Bosch QuietCast</h3>
-        <p>Premium ceramic pads for smooth and quiet braking.</p>
-        <p class="price">$45.99</p>
+    <h2>Featured Products</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=400&q=80" alt="Brake Pads" />
+        <h4>Premium Brake Pads</h4>
+        <p>Ensure your vehicle stops safely with our high-performance brake pads engineered for durability and quiet operation.</p>
+        <p class="price">$59.99</p>
       </div>
-      <div class="category">
-        <img src="https://via.placeholder.com/300x150?text=Air+Filter" alt="Air Filter">
-        <h3>Engine Air Filter - K&N High-Flow</h3>
-        <p>Reusable, washable, and boosts performance.</p>
-        <p class="price">$59.95</p>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1519923041342-c4d8c6b3c622?auto=format&fit=crop&w=400&q=80" alt="Air Filter" />
+        <h4>High-Flow Air Filter</h4>
+        <p>Improve engine performance and fuel efficiency with our washable, reusable air filters designed to trap dust and debris effectively.</p>
+        <p class="price">$34.50</p>
       </div>
-      <div class="category">
-        <img src="https://via.placeholder.com/300x150?text=Spark+Plugs" alt="Spark Plugs">
-        <h3>NGK Iridium Spark Plugs (Set of 4)</h3>
-        <p>Long-life plugs that improve fuel economy.</p>
-        <p class="price">$32.99</p>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=400&q=80" alt="Spark Plugs" />
+        <h4>Platinum Spark Plugs</h4>
+        <p>Boost ignition reliability and engine efficiency with our long-lasting platinum spark plugs, compatible with most vehicle models.</p>
+        <p class="price">$12.75 each</p>
       </div>
-      <div class="category">
-        <img src="https://via.placeholder.com/300x150?text=Battery" alt="Car Battery">
-        <h3>DieHard Gold Car Battery</h3>
-        <p>Reliable cold-crank power with 3-year warranty.</p>
-        <p class="price">$139.00</p>
-      </div>
-      <div class="category">
-        <img src="https://via.placeholder.com/300x150?text=Radiator" alt="Radiator">
-        <h3>Aluminum Radiator - Mishimoto</h3>
-        <p>Efficient cooling for high-performance engines.</p>
-        <p class="price">$189.99</p>
-      </div>
-      <div class="category">
-        <img src="https://via.placeholder.com/300x150?text=Oil+Filter" alt="Oil Filter">
-        <h3>Mobil 1 Extended Performance Oil Filter</h3>
-        <p>Protects your engine up to 20,000 miles.</p>
-        <p class="price">$14.49</p>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1556741533-f6acd647d2fb?auto=format&fit=crop&w=400&q=80" alt="Car Battery" />
+        <h4>Heavy-Duty Car Battery</h4>
+        <p>Reliable starting power and extended life with our maintenance-free, heavy-duty car batteries built for all weather conditions.</p>
+        <p class="price">$129.99</p>
       </div>
     </div>
   </section>
 
   <section>
-    <h2>Why Shop With Us?</h2>
+    <h2>Why Choose AutoCore Parts?</h2>
+    <p>
+      When it comes to your vehicle, quality matters. Here are some reasons why AutoCore Parts stands out:
+    </p>
     <ul>
-      <li>Fast, nationwide shipping</li>
-      <li>Guaranteed fitment for your vehicle</li>
-      <li>Secure checkout and easy returns</li>
-      <li>Expert support team available 7 days a week</li>
+      <li><strong>Wide Selection:</strong> From brakes and filters to batteries and accessories, we offer a broad range of parts for various makes and models.</li>
+      <li><strong>Expert Support:</strong> Our knowledgeable customer service team is here to help you find the right part for your vehicle and answer any questions.</li>
+      <li><strong>Competitive Pricing:</strong> We work hard to keep prices affordable without compromising on quality.</li>
+      <li><strong>Fast Shipping:</strong> Get your parts quickly with our reliable shipping partners and track your orders in real time.</li>
+      <li><strong>Easy Returns:</strong> If you’re not satisfied, our hassle-free return policy makes it simple to get a refund or exchange.</li>
     </ul>
   </section>
 
   <section>
-    <h2>Our Commitment</h2>
-    <p>Every item is hand-picked for reliability and performance. Our mission is to deliver the right parts—fast, affordable, and backed by our quality promise. Experience the AutoCore difference today.</p>
+    <h2>Customer Satisfaction</h2>
+    <p>
+      We believe in building lasting relationships with our customers by providing exceptional products and service. Here's what some of our customers say:
+    </p>
+    <blockquote>
+      “AutoCore Parts saved me time and money with their quick delivery and excellent quality. Highly recommend for all your car maintenance needs!” – <em>John D.</em>
+    </blockquote>
+    <blockquote>
+      “Great customer service! They helped me find the exact brake pads I needed and shipped them fast. I’ll definitely shop here again.” – <em>Sarah M.</em>
+    </blockquote>
+    <p>
+      Join thousands of satisfied customers who trust AutoCore Parts for reliable automotive parts and accessories.
+    </p>
   </section>
 
-  <footer style="background: #212529; color: white; text-align: center; padding: 2rem; margin-top: 2rem;">
+  <section>
+    <h2>Stay Connected</h2>
+    <p>
+      Sign up for our newsletter to receive the latest updates, promotions, and tips on vehicle maintenance and care. Follow us on social media for exclusive offers and expert advice.
+    </p>
+  </section>
+</main>
+
+<footer>
   <p>
-    <a href="privacy.html" style="color: #adb5bd; margin: 0 10px; text-decoration: none;">Privacy Policy</a> |
-    <a href="cookies.html" style="color: #adb5bd; margin: 0 10px; text-decoration: none;">Cookies</a> |
-    <a href="terms.html" style="color: #adb5bd; margin: 0 10px; text-decoration: none;">Terms</a> |
-    <a href="contact.html" style="color: #adb5bd; margin: 0 10px; text-decoration: none;">Contact</a>
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="cookies.html">Cookies</a> |
+    <a href="terms.html">Terms</a> |
+    <a href="contact.html">Contact</a>
   </p>
-  <p style="margin-top: 10px;">&copy; 2025 AutoCore Parts. All Rights Reserved.</p>
+  <p>&copy; 2025 AutoCore Parts. All Rights Reserved.</p>
 </footer>
 
 </body>
